@@ -1,0 +1,11 @@
+<div style="display: flex; justify-content: center;">
+    <button mat-flat-button color="warn" [routerLink]="['/']">Stop game</button>
+    <app-meme-generator #memeGenerator (OnLoad)="onMemeGeneratorLoad()"></app-meme-generator>
+    <app-expression-recognition (newExpressionEvent)="onExpressionChange($event)">
+    </app-expression-recognition>
+    <button mat-flat-button color="accent" (click)="nextMeme()">Next Meme</button>
+</div>
+
+<div *ngIf="!readyToPlay" class="loading">
+    <mat-spinner style="margin:30% auto;" ></mat-spinner>
+</div>

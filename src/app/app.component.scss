@@ -1,0 +1,21 @@
+.container {
+    margin-left: 4em;
+    margin-top: 2em;
+    margin-right: 4em;
+    margin-bottom: 1em;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+}
+.options button {
+    height: 10em;
+    width: 16em;
+    font-size: larger;
+}
+
+mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+}
